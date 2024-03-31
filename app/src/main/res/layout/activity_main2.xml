@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFC0CB">
+
+    <ImageView
+        android:id="@+id/gambaritem"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_margin="15dp" />
+
+    <TextView
+        android:id="@+id/namaitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nama_produk"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/gambaritem"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/deskripsiitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/deskripsi_produk"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/namaitem"
+        android:layout_marginTop="15dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/hargaitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/harga_produk"
+        android:textStyle="bold"
+        android:textSize="20dp"
+        android:layout_below="@id/deskripsiitem"
+        android:layout_marginTop="25dp"
+        android:paddingLeft="20dp"
+        android:textColor="@color/white"/>
+
+    <Button
+        android:id="@+id/shareButton"
+        android:layout_width="130dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="30dp"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FFFDD0"
+        android:textColor="#808080"
+        android:layout_below="@id/hargaitem"
+        android:onClick="onShareButtonClick"
+        android:text="Share" />
+
+
+
+
+</RelativeLayout>
